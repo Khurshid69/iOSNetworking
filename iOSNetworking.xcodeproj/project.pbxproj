@@ -7,25 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE3278842743D9C300C2BB53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3278832743D9C300C2BB53 /* ViewController.swift */; };
+		CE4FE71E27426E3C0065A3C8 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FE71D27426E3C0065A3C8 /* PostViewModel.swift */; };
 		CECFDBEA27414CF000119B1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFDBE927414CF000119B1D /* AppDelegate.swift */; };
 		CECFDBEC27414CF000119B1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFDBEB27414CF000119B1D /* SceneDelegate.swift */; };
-		CECFDBEE27414CF000119B1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFDBED27414CF000119B1D /* ViewController.swift */; };
 		CECFDBF127414CF000119B1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECFDBEF27414CF000119B1D /* Main.storyboard */; };
 		CECFDBF427414CF000119B1D /* iOSNetworking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CECFDBF227414CF000119B1D /* iOSNetworking.xcdatamodeld */; };
 		CECFDBF627414CF100119B1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECFDBF527414CF100119B1D /* Assets.xcassets */; };
 		CECFDBF927414CF100119B1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECFDBF727414CF100119B1D /* LaunchScreen.storyboard */; };
+		CECFDC0227414E7A00119B1D /* AFHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFDC0127414E7A00119B1D /* AFHttp.swift */; };
+		CECFDC05274166F700119B1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CECFDC04274166F700119B1D /* Alamofire */; };
+		CECFDC0827416A9600119B1D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECFDC0727416A9600119B1D /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3278832743D9C300C2BB53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE4FE71D27426E3C0065A3C8 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		CECFDBE627414CF000119B1D /* iOSNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECFDBE927414CF000119B1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECFDBEB27414CF000119B1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CECFDBED27414CF000119B1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CECFDBF027414CF000119B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CECFDBF327414CF000119B1D /* iOSNetworking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSNetworking.xcdatamodel; sourceTree = "<group>"; };
 		CECFDBF527414CF100119B1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECFDBF827414CF100119B1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECFDBFA27414CF100119B1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECFDC0127414E7A00119B1D /* AFHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHttp.swift; sourceTree = "<group>"; };
+		CECFDC0727416A9600119B1D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +40,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECFDC05274166F700119B1D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1F992F2742C6B6003E8757 /* appUtils */ = {
+			isa = PBXGroup;
+			children = (
+				CECFDBEF27414CF000119B1D /* Main.storyboard */,
+				CECFDBF527414CF100119B1D /* Assets.xcassets */,
+				CECFDBF727414CF100119B1D /* LaunchScreen.storyboard */,
+				CECFDBF227414CF000119B1D /* iOSNetworking.xcdatamodeld */,
+			);
+			path = appUtils;
+			sourceTree = "<group>";
+		};
+		CE4FE71C27426E250065A3C8 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE4FE71D27426E3C0065A3C8 /* PostViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		CECFDBDD27414CF000119B1D = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +85,32 @@
 		CECFDBE827414CF000119B1D /* iOSNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				CE1F992F2742C6B6003E8757 /* appUtils */,
+				CE4FE71C27426E250065A3C8 /* viewModel */,
+				CECFDC0627416A8300119B1D /* model */,
+				CECFDC0027414E5400119B1D /* network */,
 				CECFDBE927414CF000119B1D /* AppDelegate.swift */,
 				CECFDBEB27414CF000119B1D /* SceneDelegate.swift */,
-				CECFDBED27414CF000119B1D /* ViewController.swift */,
-				CECFDBEF27414CF000119B1D /* Main.storyboard */,
-				CECFDBF527414CF100119B1D /* Assets.xcassets */,
-				CECFDBF727414CF100119B1D /* LaunchScreen.storyboard */,
 				CECFDBFA27414CF100119B1D /* Info.plist */,
-				CECFDBF227414CF000119B1D /* iOSNetworking.xcdatamodeld */,
+				CE3278832743D9C300C2BB53 /* ViewController.swift */,
 			);
 			path = iOSNetworking;
+			sourceTree = "<group>";
+		};
+		CECFDC0027414E5400119B1D /* network */ = {
+			isa = PBXGroup;
+			children = (
+				CECFDC0127414E7A00119B1D /* AFHttp.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		CECFDC0627416A8300119B1D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CECFDC0727416A9600119B1D /* Post.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +129,9 @@
 			dependencies = (
 			);
 			name = iOSNetworking;
+			packageProductDependencies = (
+				CECFDC04274166F700119B1D /* Alamofire */,
+			);
 			productName = iOSNetworking;
 			productReference = CECFDBE627414CF000119B1D /* iOSNetworking.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +160,9 @@
 				Base,
 			);
 			mainGroup = CECFDBDD27414CF000119B1D;
+			packageReferences = (
+				CECFDC03274166F700119B1D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CECFDBE727414CF000119B1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,8 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CECFDBEE27414CF000119B1D /* ViewController.swift in Sources */,
+				CECFDC0227414E7A00119B1D /* AFHttp.swift in Sources */,
+				CE4FE71E27426E3C0065A3C8 /* PostViewModel.swift in Sources */,
 				CECFDBF427414CF000119B1D /* iOSNetworking.xcdatamodeld in Sources */,
+				CECFDC0827416A9600119B1D /* Post.swift in Sources */,
+				CE3278842743D9C300C2BB53 /* ViewController.swift in Sources */,
 				CECFDBEA27414CF000119B1D /* AppDelegate.swift in Sources */,
 				CECFDBEC27414CF000119B1D /* SceneDelegate.swift in Sources */,
 			);
@@ -362,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CECFDC03274166F700119B1D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CECFDC04274166F700119B1D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CECFDC03274166F700119B1D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CECFDBF227414CF000119B1D /* iOSNetworking.xcdatamodeld */ = {
